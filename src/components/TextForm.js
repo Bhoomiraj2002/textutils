@@ -43,11 +43,11 @@ export default function TextForm(props) {
                 onChange={handleOnChange} id="exampleFormControlTextarea1" rows="8"
                 ></textarea>
             </div>
-            <button className="btn btn-primary mx-1" onClick={handleUpClick}>convert to Uppercase</button>
-            <button className="btn btn-primary mx-1" onClick={handleLwClick}>convert to Lowercase</button>
-            <button className="btn btn-primary mx-1" onClick={handleclearClick}>Clear Text</button>
-            <button className="btn btn-primary mx-1" onClick={handleCopy}>Copy Text</button>
-            <button className="btn btn-primary mx-1" onClick={handleExtraSpace}>Remove Extra Space</button>
+            <button className="btn btn-primary mx-1 my-2" onClick={handleUpClick}>convert to Uppercase</button>
+            <button className="btn btn-primary mx-1 my-2" onClick={handleLwClick}>convert to Lowercase</button>
+            <button className="btn btn-primary mx-1 my-2" onClick={handleclearClick}>Clear Text</button>
+            <button className="btn btn-primary mx-1 my-2" onClick={handleCopy}>Copy Text</button>
+            <button className="btn btn-primary mx-1 my-2" onClick={handleExtraSpace}>Remove Extra Space</button>
         </div>
         <div className={`container my-3 text-${props.mode==='light'?'dark':'light'}`}>
             <h2>Your Text Summary</h2>

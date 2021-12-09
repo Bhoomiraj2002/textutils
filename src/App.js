@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
 import './App.css';
-//import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-//import { Routes, Route} from "react-router-dom";
-
+import { Routes, Route} from "react-router-dom";
 
 function App() {
   const [mode, setmode] = useState('light');  //whether dark mode is enabled or not
   const [alert, setAlert] = useState(null);
 
   const showAlert = (message, tp)=>{
-    
     setAlert({
       msg: message,
       type: tp
@@ -39,12 +37,12 @@ function App() {
       <Navbar title='Textutils' mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
       <div className="container my-3">
-      {/* <Routes>
-          <Route path="/" element={ */}
+       <Routes>
+          <Route path="/" element={
             <TextForm heading="Enter The Text to analyze below" mode={mode} showAlert={showAlert}/>
-          {/* } />
+          } />
           <Route path="about" element={<About />} />
-      </Routes> */}
+      </Routes> 
       </div>
 
     </>
