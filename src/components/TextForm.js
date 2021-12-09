@@ -52,7 +52,7 @@ export default function TextForm(props) {
         <div className={`container my-3 text-${props.mode==='light'?'dark':'light'}`}>
             <h2>Your Text Summary</h2>
             <p>{getWords()} words and {text.length} charactors</p>
-            <p>{0.008*getWords()} Minutes read</p>
+            
             <h2>preview</h2>
             <p>{text}</p>
         </div>
